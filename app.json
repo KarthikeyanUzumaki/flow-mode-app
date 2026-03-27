@@ -26,14 +26,29 @@
       },
       "permissions": [
         "android.permission.CAMERA"
-      ]
+      ],
+      "package": "com.karthikuzumaki.flowmodeapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "react-native-fast-tflite",
-      "react-native-vision-camera"
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "Flow Mode needs access to your camera to detect food.",
+          "enableMicrophonePermission": false
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 26
+          }
+        }
+      ]
     ],
     "extra": {
       "eas": {
