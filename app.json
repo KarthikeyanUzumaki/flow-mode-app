@@ -38,7 +38,8 @@
         "react-native-vision-camera",
         {
           "cameraPermissionText": "Flow Mode needs access to your camera to detect food.",
-          "enableMicrophonePermission": false
+          "enableMicrophonePermission": false,
+          "enableFrameProcessors": true
         }
       ],
       [
@@ -47,7 +48,8 @@
           "android": {
             "minSdkVersion": 26,
             "compileSdkVersion": 36,
-            "targetSdkVersion": 36
+            "targetSdkVersion": 36,
+            "extraMavenRepos": ["$rootDir/../node_modules/react-native-vision-camera/android"]
           }
         }
       ]

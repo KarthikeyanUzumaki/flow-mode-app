@@ -26,5 +26,8 @@
   "private": true,
   "overrides": {
     "react-native-worklets": "0.7.4"
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^5.0.3"
   }
 }
